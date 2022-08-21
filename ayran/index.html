@@ -1,0 +1,105 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>SÜTAŞ</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <script src="https://use.fontawesome.com/bcdf1e5b83.js"></script>
+
+</head>
+<body>
+
+    <div id="floating_edge">
+        <i  class="fa fa-bars fa-lg" aria-hidden="true" style="margin-top:30px; margin-left:10px; color: #8A8A8A;"></i></br>
+        <i  class="fa fa-search fa-lg" aria-hidden="true" style="margin-top:15px; margin-left:10px;color: #8A8A8A;"></i>
+        <i class="fa fa-sign-in fa-lg" aria-hidden="true" style="margin-top:15px; margin-left:10px;color: #8A8A8A;"></i>
+        <a href="#home"><i class="fa fa-home fa-lg" aria-hidden="true" style="margin-top:90px; margin-left:10px;color: #8A8A8A;"></i></a>
+        <a href="#about"><i class="fa fa-info-circle fa-lg" aria-hidden="true" style="margin-top:30px; margin-left:10px;color: #8A8A8A;"></i></a>
+        <a href="#shop"><i class="fa fa-shopping-cart fa-lg" aria-hidden="true" style="margin-top:30px; margin-left:10px;color: #8A8A8A;"></i></a>
+        <a href="#contact"><i class="fa fa-envelope fa-lg" aria-hidden="true" style="margin-top:30px; margin-left:10px;color: #8A8A8A;"></i></a>
+        <i class="fa fa-heart fa-lg" aria-hidden="true" style="margin-top:30px; margin-left:10px;color: #8A8A8A;"></i>
+        <i class="fa fa-question-circle fa-lg" aria-hidden="true" style="margin-top:30px; margin-left:10px;color: #8A8A8A;"></i>
+        
+        
+    </div>
+
+    <div id="header">
+        <img src="sutas_logo.png">
+        <button>SÜTAŞ MARKET</button>
+    </div>
+
+    <section id="home">
+        <div id="home_page">
+            <div id="ayran">
+                <img src="kayan_ayran.png">
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <div id="about-page">
+            <div id="left_about">
+                <h1 style="text-align:center;">İYİ YAŞAM</h1>
+                <h3>İyi ve sağlıklı bir yaşam için dengeli ve doğru beslenmenin önemi tartışılamaz.</h3>
+                <h3>Doğru gıdalara günlük beslenme alışkanlıklarımızda yer vererek yaşam kalitemizi yükseltmek elimizde.</h3>
+
+                <h3>Yeterli ve dengeli beslenme, vücudun ihtiyacı olan enerji ve besin öğelerinin her gün ihtiyaç duyulan miktarlarda 
+                    alınması anlamına geliyor. Vücudumuzun ihtiyaç duyduğu öğelerin kaynağı olan dört temel besin 
+                    grubundan birini oluşturan süt ve süt ürünleri; en faydalı ve besleyici gıdaların başında yer alıyor.</h3>
+            </div>
+            <div id="right_about">
+                <h3>Hayata gözlerimizi açtığımız andan itibaren bize sonsuz fayda sağlayan süt, hayatımızın her döneminde 
+                    beslenmemiz için önemli... Büyüme çağındaki çocukların bedensel ve zihinsel gelişiminde gerekli olan protein;
+                     kemik ve diş gelişimi, kasların çalışması ve sinir iletimine yarayan, aynı zamanda osteoporozu önlemek için 
+                     yaşlılıkta önemi daha da artan kalsiyum; sağlıklı sinir sistemi, kırmızı kan hücreleri yapımı, enerji 
+                     üretimi gibi hayati önemi olan işlevler için B grubu vitaminleri ve diğer faydalı mineralleri ile süt ve süt
+                    ürünleri bizlere iyilik ve sağlık getiriyor.
+                </h3>
+            </div>
+        </div>
+    </section>
+
+    <section id="shop">
+        <div id="shop_page">
+            
+            <img class="salla" src="sut.png" style="margin-top: 50px; margin-left: 75px;">
+            <img class="salla" src="tereyag.png" style="margin-top: 8px; margin-left: 120px;">
+            <img class="salla" src="k_peynir.png" style="margin-top: 50px; margin-left: 320px;">
+            <img class="salla" src="m_yogurt.webp" style="margin-top: 45px; margin-left: 75px;" height="200" width="200">
+            <img class="salla" src="danone.png" style="margin-top: 25px; margin-left: 120px;">
+            <img class="salla" src="kaymak.webp" style="margin-top: 90px; margin-left: 75px;" height="200" width="200">
+            <button><i class="fa fa-shopping-cart fa-lg" aria-hidden="true"></i> Magazaya İlerle</button>
+            <img class="salla" src="peynir.png" style="margin-top: 5px; margin-left: 100px;">
+        </div>
+    </section>
+
+    <section id="contact">
+        <div id="form_page">
+            <div id="login">
+                
+                <form action="">
+                    <h1>GİRİŞ YAP</h1>
+                    <div id="logo" class="icon-ic-drafts-24px"></div>
+                    <input name="name" type="text" placeholder="KULLANICI ADI" id="name" required/>
+                    <input name="email" type="email"  placeholder="EMAİL" id="email" required/>
+                    <textarea name="text" placeholder="MESAJ"></textarea>
+                    <input type="submit" value="Gönder" id="button-blue"/>
+                    <input type="submit" value="Kayıt Ol" id="button-blue"/>
+                </form>
+
+            </div>
+        </div>
+    </section>
+
+
+</body>
+<script>
+    window.onscroll = function () {
+    scrollRotate();
+};
+
+function scrollRotate() {
+    let image = document.getElementById("ayran");
+    image.style.transform = "rotate(" + window.pageYOffset/3.1 + "deg)";
+}
+</script>
+</html>
